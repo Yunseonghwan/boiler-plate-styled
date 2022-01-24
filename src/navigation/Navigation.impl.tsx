@@ -1,16 +1,14 @@
 import React from "react";
 import { INavigation } from "./Navigation.interface";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "../pages/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "@/pages";
 
 const Navigation: React.FC<INavigation.IProps> = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 };

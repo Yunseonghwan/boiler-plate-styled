@@ -1,14 +1,11 @@
 import React from "react";
-import { Test } from "../../components/Atoms";
+import styled from "styled-components";
 import { IHome } from "./Home.interface";
-import { Container } from "./styles";
 
 const Home: React.FC<IHome.IProps> = () => {
-  return (
-    <Container>
-      Home <Test />
-    </Container>
-  );
+  return <Container>Home</Container>;
 };
+
+export const Container = styled.div``;
 
 export default Home;
