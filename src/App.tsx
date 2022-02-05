@@ -6,13 +6,13 @@ import { theme } from "./styles";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <RecoilRoot>
-        <React.Suspense fallback={null}>
+    <RecoilRoot>
+      <React.Suspense fallback={null}>
+        <ThemeProvider theme={theme}>
           <Navigation />
-        </React.Suspense>
-      </RecoilRoot>
-    </ThemeProvider>
+        </ThemeProvider>
+      </React.Suspense>
+    </RecoilRoot>
   );
 }
 

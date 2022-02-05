@@ -1,33 +1,22 @@
-{
-    "presets": [
-        [
-            "next/babel",
-            {
-                "preset-react": {
-                    "runtime": "automatic",
-                    "importSource": "@emotion/react"
-                }
-            }
-        ]
-    ],
-    "plugins": [
-        [
-            "module-resolver",
-            {
-                "root": [
-                    "./src"
-                ],
-                "alias": {
-                    "@/*": "*",
-                    "@pages/*":"pages/*",
-                    "@assets/*": "assets/*",
-                    "@common/*": "common/*",
-                    "@domains/*": "domains/*",
-                    "@utils/*": "utils/*",
-                    "@recoil/*": "recoil/*",
-                    "@types/*": "types/*",
-                }
-            }
-        ]
-    ]
-}
+// {
+//     "plugins": [
+//         [
+//             "module-resolver",
+//             {
+//                 "root": [
+//                     "./src"
+//                 ],
+//                 "alias": {
+//                     "@/*": "*",
+//                     "@pages/*":"pages/*",
+//                     "@assets/*": "assets/*",
+//                     "@common/*": "common/*",
+//                     "@domains/*": "domains/*",
+//                     "@utils/*": "utils/*",
+//                     "@recoil/*": "recoil/*",
+//                     "@types/*": "types/*",
+//                 }
+//             }
+//         ]
+//     ]
+// }

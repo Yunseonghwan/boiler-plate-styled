@@ -1,11 +1,19 @@
 import { DefaultTheme } from "styled-components";
 
+declare module "styled-components" {
+  export interface DefaultTheme {
+    colors: { primary: string; black: string; red: string };
+    fonts: {};
+  }
+}
+
 const theme: DefaultTheme = {
-  color: {
+  colors: {
     primary: "white",
-    black: "black",
+    black: "#000",
+    red: "red",
   },
   fonts: {},
 };
 
-export default theme;
+export { theme };
